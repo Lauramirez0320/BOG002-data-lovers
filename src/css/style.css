@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+:root {
+  --lightblue: #c1def0;
+  --bone: #f8f8f8;
+  --turquoise: #18abc2;
+  --green: #cada59;
+  --black: #000;
+  --gray: #e5e5e5;
+  --white: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: var(--gray);
+}
+header {
+  background-color: var(--bone);
+}
+.img-header {
+  display: flex;
+  justify-content: center;
+}
+.navtab {
+  background-color: var(--lightblue);
+  width: 100%;
+  padding: 1em;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background-color: var(--lightblue);
+  flex-direction: row;
+  gap: 3rem;
+}
+nav ul li a {
+  text-decoration: none;
+  background-color: var(--lightblue);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.summary-text {
+  background-color: var(--bone);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 3em 0;
+}
+.summary-text p {
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container h3 {
+  margin: 2rem 0;
+  text-align: center;
+  padding: 1rem;
+}
+.card-container{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 20%;
+}
+.profile-card {
+  width: 300px;
+  background-color: var(--white);
+  border-radius: 20px;
+  
+}
+.profile-card img {
+  border-radius: 20px;
+  width: 100%;
+}
+.seeMore-button button {
+  background-color: var(--turquoise);
+  width: 150px;
+  padding: 1em;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+.seeMore-button button a {
+  color: var(--bone);
+  text-decoration: none;
+  font-weight: 500;
+}
+footer {
+  display: flex;
+  margin-top: 2rem;
+  background-color: var(--lightblue);
+  width: 100%;
+  padding: 1em 0;
+  flex-direction: row;
+  justify-content: center;
+}
+.icon-github {
+  width: 1em;
+  margin-right: 10px;
+}
+.logo img {
+  width: 60px;
+  padding-top: 4px;
+}
