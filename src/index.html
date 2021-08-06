@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <div class="up-button"></div>
+  <header>
+    <div class="img-header">
+      <img src="./img/randmHeader.png" alt="rick and morty cut in half">
+    </div>
+    <div class="box">
+      <div class="container-1">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <form class="search">
+          <label for="search"></label>
+          <input type="search" id="search" placeholder="Search..." autocomplete="off"/>
+          <button type="submit" class="search-Submit"></button>
+        </form>
+      </div>
+    </div>
+    <nav>
+      <div class="navtab">
+        <ul>
+          <li><a href="/src/allCharacters.html">PERSONAJES</a></li>
+          <li><a href="#">TEMPORADAS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="summary-text">
+      <p>Adéntrate a las desventuras del científico, Rick, y su fácilmente influenciable nieto, Morty, quienes pasan el
+        tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos.</p>
+    </div>
+    <div class="container">
+      <h3>Personajes Principales</h1>
+        <div class="card-container">
+          <!-- <div class="profile-card">
+
+          </div> -->
+        </div>
+        <div class="seeMore-button">
+          <button id="seeMore-button"><a href="/src/allCharacters.html">Ver todos</a></button>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <div class="icon-github">
+      <a href="#">
+        <img src="./img/github-brands.svg" alt="logo-github">
+      </a>
+    </div>
+    <p> &lt;&gt;</p>
+    <div class="logo">
+      <img src="./img/logo-anaru.svg" alt="logo-anaru">
+
+    </div>
+  </footer>
+  <script src="./main.js" type="module"></script>
+</body>
+
 </html>
