@@ -6,6 +6,7 @@
   --green: #cada59;
   --black: #000;
   --gray: #e5e5e5;
+  --darkGray: #b9b8b8;
   --red: #C61A25;
   --white: #fff;
 }
@@ -147,6 +148,106 @@ nav ul li a {
 .sortByLetter-container{
   display: flex;
   flex-direction: column;
+}
+
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.containerCheckbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+/* Hide the browser's default checkbox */
+.containerCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(136, 7, 7);
+}
+
+/* On mouse-over, add a grey background color */
+.containerCheckbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCheckbox input:checked ~ .checkmark {
+  background-color: #1cd1b0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCheckbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 4px;
+  height: 9px;
+  border: solid rgb(131, 17, 17);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkmarkRadio {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: var(--gray);
+  border-radius: 50%;
+}
+
+.checkmarkRadio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.containerCheckbox .checkmarkRadio:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.containerCheckbox:hover input ~ .checkmarkRadio {
+  background-color: var(--darkGray);
+}
+.containerCheckbox input:checked ~ .checkmarkRadio {
+  background-color: var(--green);
 }
 
 .sortBySpecies-container{
