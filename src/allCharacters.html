@@ -13,14 +13,14 @@
   <div class="up-button"></div>
   <header>
     <div class="img-header">
-      <a href="/src/index.html"><img src="./img/randm-logo.png" alt="rick and morty logo"></a> 
+      <a href="../index.html"><img src="./img/randm-logo.png" alt="rick and morty logo"></a>
     </div>
     <div class="box">
       <div class="container-1">
         <span class="icon"><i class="fa fa-search"></i></span>
         <form class="search">
           <label for="search"></label>
-          <input type="search" id="search" placeholder="Search..." autocomplete="off"/>
+          <input type="search" id="search" placeholder="Search..." autocomplete="off" />
           <button type="submit" class="search-Submit"></button>
         </form>
       </div>
@@ -28,24 +28,61 @@
     <nav>
       <div class="navtab">
         <ul>
-          <li><a href="/src/index.html">INICIO</a></li>
-          <li><a href="#">PERSONAJES</a></li>
-          <li><a href="#">TEMPORADAS</a></li>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="/src/allCharacters.html">PERSONAJES</a></li>
+          <li><a href="/src/seasonsPage.html">TEMPORADAS</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <section>
-    <div class="container">
+    <div class="summary-text ">
       <h3>Personajes</h1>
-        <div class="card-container">
-          <!-- <div class="profile-card">
+        <div class="filter-options-container">
+          <div class="sortByLetter-container">
+            <label for="sortByLetter">Sort alphabetically:</label>
 
-          </div> -->
+            <div class="checkbox">
+              <label class="containerCheckbox">A - Z
+                <input type="radio" checked="checked" name="sortByLetter" id="sortByLetterAZ" value="AZ">
+                <span class="checkmarkRadio"></span>
+              </label>
+
+              <label class="containerCheckbox">Z - A
+                <input type="radio" name="sortByLetter" id="sortByLetterZA" value="ZA">
+                <span class="checkmarkRadio"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="sortBySpecies-container">
+            <label for="sortBySpecies">Sort by species</label>
+            <select name="sortBySpecies" id="sortBySpecies">
+              <option value="species">Species</option>
+              <option value="aliens">Aliens</option>
+              <option value="animals">Animals</option>
+              <option value="cronenberg">Cronenberg</option>
+              <option value="disease">Disease</option>
+              <option value="human">Human</option>
+              <option value="humanoid">Humanoid</option>
+              <option value="mytholog">Mytholog</option>
+              <option value="parasite">Parasite</option>
+              <option value="poopybutthole">Poopybutthole</option>
+              <option value="unknowns">Unknowns</option>
+              <option value="vampire">Vampire</option>
+            </select>
+
+          </div>
         </div>
-        <div class="seeMore-button">
-          
-        </div>
+    </div>
+    <div class="container">
+
+      <p><span>TIP: </span>Pasa el cursor por encima de algún personaje para ver su información</p>
+
+      <div class="card-container"></div>
+      <div class="seeMore-button">
+
+      </div>
     </div>
   </section>
   <footer>
