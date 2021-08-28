@@ -9,6 +9,10 @@ const form = document.querySelector('.search');
 const inputSearch = document.querySelector('#search');
 const seeMoreButton = document.querySelector('#seeMore-button');
 
+const checkAZRadio = document.querySelector('#sortByLetterAZ');
+const checkZARadio = document.querySelector('#sortByLetterZA');
+const checkRadio = document.getElementsByName('sortByLetter')
+
 const apiUrlAllCharacters = 'https://rickandmortyapi.com/api/character';
 let apiUrl = 'https://rickandmortyapi.com/api/character/1,2,3,4,5';
 const apiUrlEpisode = 'https://rickandmortyapi.com/api/episode'
@@ -30,6 +34,22 @@ function getData() {
 function searching(textInput) {
   location.replace(`https://www.google.com/search?q=${textInput}`);
 }
+
+//Sort by letter asc desc
+// checkAZRadio.addEventListener('click', function () {
+//   console.log('Click');
+//   const type = 1; 
+//   sortByLetter(type);
+  
+// })
+
+// function sortByLetter(type) {
+//   let start = 0;
+//   let end = 50;
+//   const NewArray = sortData(dataSearch, type);
+//   let dataSearch = NewArray;
+//   dataApi2();
+// }
 
 //Render characters
 export function renderCharacters(data) {
@@ -94,8 +114,7 @@ export function renderAllCharacters(allData) {
 }
 
 
-
-if(location.href == "http://127.0.0.1:5500/src/index.html"){
+if(location.href == "http://127.0.0.1:5500/index.html"){
   dataApi2(apiUrl);
 } else if (location.href == "http://127.0.0.1:5500/src/allCharacters.html") {
   dataApi(apiUrlAllCharacters); 
