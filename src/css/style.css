@@ -397,6 +397,7 @@ nav ul li a {
   align-items: flex-start;
   flex-direction: column;
   padding: 0 20px;
+  width: 100%;
 }
 .back-info p {
   margin: 9px 0;

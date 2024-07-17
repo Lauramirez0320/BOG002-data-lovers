@@ -76,7 +76,7 @@ export function renderMainCharacters(allData) {
             <p><span>Gender:</span> ${allCharactersData.gender}</p>
             <p><span>Origin:</span> ${allCharactersData.origin.name}</p>
             <p><span>Location:</span> ${allCharactersData.location.name}</p>
-            <p><span>First appearance:</span>${allCharactersData.episode[0]}</p>
+            <p><span>First appearance:</span> ${allCharactersData.episode[0].substr(-1)}</p>
           </div>
         </div>
       </div>
